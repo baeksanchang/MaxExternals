@@ -3,3 +3,4 @@ Builds
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 xcuserdata/
+built_externals

@@ -151,7 +151,7 @@
 				C74SUPPORT = "$(SRCROOT)/../../c74support";
 				C74_SYM_LINKER_FLAGS = "@$(C74SUPPORT)/max-includes/c74_linker_flags.txt";
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = "$(SRCROOT)/../../../../MaxExternals";
+				DSTROOT = "$(SRCROOT)/../built_externals/";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(C74SUPPORT)/max-includes\"",
 					"\"$(C74SUPPORT)/msp-includes\"",
@@ -177,7 +177,7 @@
 				C74SUPPORT = "$(SRCROOT)/../../c74support";
 				C74_SYM_LINKER_FLAGS = "@$(C74SUPPORT)/max-includes/c74_linker_flags.txt";
 				COPY_PHASE_STRIP = YES;
-				DSTROOT = "$(SRCROOT)/../../../../MaxExternals";
+				DSTROOT = "$(SRCROOT)/../built_externals/";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(C74SUPPORT)/max-includes\"",
 					"\"$(C74SUPPORT)/msp-includes\"",
