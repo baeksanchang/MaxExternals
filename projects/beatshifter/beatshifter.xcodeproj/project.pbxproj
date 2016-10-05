@@ -14,6 +14,7 @@
 		22CF10220EE984600054F513 /* maxmspsdk.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = maxmspsdk.xcconfig; path = ../maxmspsdk.xcconfig; sourceTree = SOURCE_ROOT; };
 		22CF11AD0EE9A8840054F513 /* beatshifter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = beatshifter.c; sourceTree = "<group>"; };
 		2FBBEAE508F335360078DB84 /* beatshifter.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beatshifter.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5E6E6A1DA5B87200AAD9FA /* beatshifter.maxhelp */ = {isa = PBXFileReference; lastKnownFileType = text; path = beatshifter.maxhelp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +31,7 @@
 		089C166AFE841209C02AAC07 /* iterator */ = {
 			isa = PBXGroup;
 			children = (
+				ED5E6E6A1DA5B87200AAD9FA /* beatshifter.maxhelp */,
 				22CF10220EE984600054F513 /* maxmspsdk.xcconfig */,
 				22CF11AD0EE9A8840054F513 /* beatshifter.c */,
 				19C28FB4FE9D528D11CA2CBB /* Products */,
@@ -67,6 +69,7 @@
 				2FBBEADA08F335360078DB84 /* Sources */,
 				2FBBEADC08F335360078DB84 /* Frameworks */,
 				2FBBEADF08F335360078DB84 /* Rez */,
+				ED5E6E6D1DA5B95000AAD9FA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -119,6 +122,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ED5E6E6D1DA5B95000AAD9FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp ${PROJECT_DIR}/*.maxhelp ${PROJECT_DIR}/../built_externals/\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2FBBEADA08F335360078DB84 /* Sources */ = {
