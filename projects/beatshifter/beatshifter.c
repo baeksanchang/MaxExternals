@@ -179,8 +179,8 @@ void parse_values(t_beatshifter *b, t_symbol *sym, long argc, t_atom *argv)
 
 void bs_compute_delay(t_beatshifter *b)
 {
-	// default delay amount by largest offset which is 8th note
-	double delay = 60000.0 / 2.0 / b->tempo;
+	// default delay amount by smallest offset which is 16th note
+	double delay = 60000.0 / 4.0 / b->tempo;
 
 	srand(time(NULL));
 	double rand_chance_value = (double)(rand() % 100);
